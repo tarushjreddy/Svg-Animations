@@ -1,0 +1,72 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+}
+body{
+    text-align: center;
+
+}
+
+#right-hand{
+animation: wheel 2s infinite alternate;
+transform-origin:  0px 30px ;
+transform-box: fill-box;
+}
+@keyframes wheel {
+    from{
+   
+        transform: rotateZ(0deg);
+
+    }to{
+        transform: rotateZ(-80deg);
+            
+    }
+}
+@keyframes head {
+    from{
+   
+        transform: rotateZ(0deg);
+
+    }to{
+        transform: rotateZ(-20deg);
+            
+    }
+}
+#head{
+   animation: head 2s infinite alternate;
+transform-origin:  center;
+transform-box: fill-box;
+} 
+
+#phone{
+    animation: phone 1s infinite alternate;
+    background-color: red;
+transform-origin:  center;
+transform-box: fill-box;  
+}
+#screen{
+   animation: phone_screen 2s infinite alternate;
+}
+#spotify{
+    width:24px;
+     height:24px; fill:black;
+}
+@keyframes phone_screen{
+     from{
+         
+  fill: red;
+     }to{
+           fill: yellow;
+     }
+}
+@keyframes phone {
+    from{
+   
+        transform: rotateZ(0deg);
+
+    }to{
+        transform: rotateZ(-10deg);
+            
+    }
+}
